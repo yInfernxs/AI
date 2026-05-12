@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA nell'Industria - AI Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        }
+
+        h1, h2, h3 {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 to-indigo-50">
+
+    <!-- HEADER -->
+    <header class="hero-gradient text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <a href="index.html" class="text-purple-300 hover:text-white transition mb-4 inline-block">← Torna al sito</a>
+            <h1 class="text-5xl md:text-6xl font-black mb-4">IA nell'Industria</h1>
+            <p class="text-xl text-purple-200">Automazione intelligente e produzione del futuro</p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="max-w-4xl mx-auto py-12 px-6">
+
+        <!-- INTRODUZIONE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg mb-12 border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Introduzione</h2>
+            <p class="text-slate-700 leading-relaxed mb-4">
+                L'intelligenza artificiale sta guidando l'Industria 4.0, trasformando le fabbriche in 
+                ecosistemi intelligenti dove robot collaborativi, sensori IoT e algoritmi predictive 
+                ottimizzano ogni aspetto della produzione.
+            </p>
+            <p class="text-slate-700 leading-relaxed">
+                Dall'automazione dei processi alla manutenzione preventiva, l'IA riduce gli sprechi, 
+                aumenta la qualità e accelera l'innovazione manifatturiera.
+            </p>
+        </section>
+
+        <!-- APPLICAZIONI -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-purple-900 mb-8">Principali Applicazioni</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">🤖 Robot collaborativi</h3>
+                    <p class="text-slate-700 mb-4">
+                        Cobot intelligenti che lavorano fianco a fianco con gli operatori umani, 
+                        svolgendo compiti ripetitivi e pericolosi con precisione millimetrica.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Assemblaggio automatizzato</li>
+                        <li>Movimentazione di carichi pesanti</li>
+                        <li>Lavori in ambienti pericolosi</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">🔧 Manutenzione predittiva</h3>
+                    <p class="text-slate-700 mb-4">
+                        L'IA analizza i dati dei sensori per prevedere guasti prima che accadano, 
+                        evitando costanti fermi macchina e aumentando l'affidabilità.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Previsione di guasti imminenti</li>
+                        <li>Ottimizzazione interventi di manutenzione</li>
+                        <li>Riduzione dei costi di riparazione</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">📊 Ottimizzazione della catena di fornitura</h3>
+                    <p class="text-slate-700 mb-4">
+                        Algoritmi IA ottimizzano la logistica, la gestione dell'inventario e la 
+                        pianificazione della produzione per massimizzare l'efficienza.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Previsione della domanda</li>
+                        <li>Ottimizzazione dei percorsi</li>
+                        <li>Riduzione dei tempi di consegna</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">✅ Controllo qualità automatico</h3>
+                    <p class="text-slate-700 mb-4">
+                        Camere e sensori IA ispezioni ogni prodotto con accuratezza sovrumana, 
+                        eliminando i difetti prima che raggiungano i clienti.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Ispezione visiva ultraveloce</li>
+                        <li>Rilevamento di difetti microscopici</li>
+                        <li>Zero difetti target</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VANTAGGI -->
+        <section class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-10 rounded-2xl mb-12">
+            <h2 class="text-3xl font-bold mb-8">Vantaggi dell'IA nell'Industria</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-xl font-bold mb-2">📈 Produttività +40%</h4>
+                    <p>Aumento significativo della capacità produttiva senza aumentare i costi.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">🎯 Qualità superiore</h4>
+                    <p>Riduzione degli scarti e garanzia di prodotti perfetti.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">🛡️ Sicurezza</h4>
+                    <p>Protezione degli operatori dai lavori pericolosi.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">💹 ROI rapido</h4>
+                    <p>Ritorno sull'investimento generalmente raggiunto in 1-2 anni.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SFIDE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Sfide e Considerazioni</h2>
+            <ul class="space-y-4 text-slate-700">
+                <li class="flex gap-4">
+                    <span class="text-2xl">👥</span>
+                    <div>
+                        <strong>Impatto occupazionale:</strong> La perdita di posti di lavoro richiede programmi di riqualificazione.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">💵</span>
+                    <div>
+                        <strong>Costi iniziali alti:</strong> Investimento significativo in infrastruttura e training del personale.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">🔌</span>
+                    <div>
+                        <strong>Cyber-sicurezza:</strong> I sistemi connessi sono vulnerabili agli attacchi informatici.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="mb-2">© 2026 - AI Explorer - Loris Lorello</p>
+            <a href="index.html" class="text-purple-300 hover:text-white transition">Torna alla home</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

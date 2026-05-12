@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA in Educazione - AI Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        }
+
+        h1, h2, h3 {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 to-indigo-50">
+
+    <!-- HEADER -->
+    <header class="hero-gradient text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <a href="index.html" class="text-purple-300 hover:text-white transition mb-4 inline-block">← Torna al sito</a>
+            <h1 class="text-5xl md:text-6xl font-black mb-4">IA in Educazione</h1>
+            <p class="text-xl text-purple-200">Personalizzazione dell'apprendimento per ogni studente</p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="max-w-4xl mx-auto py-12 px-6">
+
+        <!-- INTRODUZIONE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg mb-12 border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Introduzione</h2>
+            <p class="text-slate-700 leading-relaxed mb-4">
+                L'intelligenza artificiale sta rivoluzionando l'educazione, permettendo un apprendimento 
+                veramente personalizzato dove ogni studente progredisce al suo ritmo con contenuti e 
+                supporto adatti al suo livello specifico.
+            </p>
+            <p class="text-slate-700 leading-relaxed">
+                Dai tutor virtuali che accompagnano 24/7 agli insegnanti potenziati dall'IA, la 
+                tecnologia sta democratizzando l'accesso all'istruzione di qualità mondiale.
+            </p>
+        </section>
+
+        <!-- APPLICAZIONI -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-purple-900 mb-8">Principali Applicazioni</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">🤖 Tutor virtuali AI</h3>
+                    <p class="text-slate-700 mb-4">
+                        Assistenti intelligenti forniscono supporto personalizzato 24/7, rispondono a 
+                        domande e adattano il livello di difficoltà in base al progresso dello studente.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Spiegazioni adattate al livello</li>
+                        <li>Feedback istantaneo</li>
+                        <li>Disponibilità illimitata</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">📚 Apprendimento personalizzato</h3>
+                    <p class="text-slate-700 mb-4">
+                        L'IA analizza lo stile di apprendimento di ogni studente e crea percorsi 
+                        educativi individualizzati per massimizzare il coinvolgimento e i risultati.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Learning paths su misura</li>
+                        <li>Contenuti adattivi dinamici</li>
+                        <li>Apprendimento efficiente</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">✍️ Valutazione automatica</h3>
+                    <p class="text-slate-700 mb-4">
+                        Sistemi IA correggono test, saggi e esercizi fornendo feedback dettagliato 
+                        istantaneo, liberando gli insegnanti per compiti più creativi.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Correzione di test in tempo reale</li>
+                        <li>Analisi di saggio automatica</li>
+                        <li>Feedback personalizzato</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">📊 Analisi del rendimento</h3>
+                    <p class="text-slate-700 mb-4">
+                        L'IA fornisce approfondimenti sul progresso degli studenti, identifica lacune 
+                        di apprendimento e suggerisce interventi mirati per gli insegnanti.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Monitoraggio del progresso in tempo reale</li>
+                        <li>Predizione di difficoltà future</li>
+                        <li>Interventi preventivi suggeriti</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VANTAGGI -->
+        <section class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-10 rounded-2xl mb-12">
+            <h2 class="text-3xl font-bold mb-8">Vantaggi dell'IA in Educazione</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-xl font-bold mb-2">🎯 Risultati migliori</h4>
+                    <p>Studenti imparano più velocemente con metodi personalizzati.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">♿ Inclusione</h4>
+                    <p>Accesso all'istruzione per studenti con esigenze speciali.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">🌍 Equità globale</h4>
+                    <p>Educazione di qualità accessibile anche in aree remote.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">👨‍🏫 Insegnanti potenziati</h4>
+                    <p>I docenti si concentrano su mentorship anziché compiti ripetitivi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SFIDE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Sfide e Considerazioni</h2>
+            <ul class="space-y-4 text-slate-700">
+                <li class="flex gap-4">
+                    <span class="text-2xl">🖥️</span>
+                    <div>
+                        <strong>Divario digitale:</strong> Non tutti gli studenti hanno accesso a dispositivi e internet.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">❤️</span>
+                    <div>
+                        <strong>Contatto umano:</strong> Gli insegnanti umani rimangono essenziali per motivazione e formazione del carattere.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">🔒</span>
+                    <div>
+                        <strong>Privacy dei dati:**Student data è sensibile e richiede protezione rigotosa.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">😊</span>
+                    <div>
+                        <strong>Socializzazione:</strong> L'apprendimento online può ridurre l'interazione tra pari.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="mb-2">© 2026 - AI Explorer - Loris Lorello</p>
+            <a href="index.html" class="text-purple-300 hover:text-white transition">Torna alla home</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

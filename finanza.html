@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA in Finanza - AI Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        }
+
+        h1, h2, h3 {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 to-indigo-50">
+
+    <!-- HEADER -->
+    <header class="hero-gradient text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <a href="index.html" class="text-purple-300 hover:text-white transition mb-4 inline-block">← Torna al sito</a>
+            <h1 class="text-5xl md:text-6xl font-black mb-4">IA in Finanza</h1>
+            <p class="text-xl text-purple-200">Trading intelligente, rischi ridotti, profitti ottimizzati</p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="max-w-4xl mx-auto py-12 px-6">
+
+        <!-- INTRODUZIONE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg mb-12 border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Introduzione</h2>
+            <p class="text-slate-700 leading-relaxed mb-4">
+                L'intelligenza artificiale ha rivoluzionato il settore finanziario, permettendo istituzioni 
+                di gestire miliardi di transazioni, analizzare rischi complessi e offrire servizi personalizzati 
+                con velocità e accuratezza senza precedenti.
+            </p>
+            <p class="text-slate-700 leading-relaxed">
+                Dai trading algoritmici alle strategie di investimento, l'IA è diventata il cuore del 
+                sistema finanziario globale moderno.
+            </p>
+        </section>
+
+        <!-- APPLICAZIONI -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-purple-900 mb-8">Principali Applicazioni</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">📈 Trading algoritmico</h3>
+                    <p class="text-slate-700 mb-4">
+                        Gli algoritmi IA analizzano milioni di dati di mercato in millisecondi, 
+                        identificando opportunità di trading redditizie con rischi minimizzati.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Trading ad altissima frequenza</li>
+                        <li>Analisi di pattern di mercato</li>
+                        <li>Esecuzione istantanea degli ordini</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">🛡️ Prevenzione delle frodi</h3>
+                    <p class="text-slate-700 mb-4">
+                        L'IA monitora transazioni anomale in tempo reale, identificando e bloccando 
+                        attività fraudolente con accuratezza del 99%.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Rilevamento di comportamenti anomali</li>
+                        <li>Protezione dalle frodi con carta di credito</li>
+                        <li>Blocco di transazioni sospette</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">📊 Analisi del rischio</h3>
+                    <p class="text-slate-700 mb-4">
+                        Modelli predittivi valutano il rischio di credito, il rischio di mercato e il 
+                        rischio operazionale con visualizzazione complessa e granulare.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Credit scoring avanzato</li>
+                        <li>Valutazione del merito creditizio</li>
+                        <li>Gestione del rischio di portafoglio</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-4">💼 Consulenza finanziaria personalizzata</h3>
+                    <p class="text-slate-700 mb-4">
+                        Robo-advisor forniscono consulenza di investimento personalizzata basata sul 
+                        profilo di rischio e gli obiettivi finanziari di ogni cliente.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Allocazione ottimale degli asset</li>
+                        <li>Gestione automatica dei portafogli</li>
+                        <li>Servizi finanziari accessibili a tutti</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VANTAGGI -->
+        <section class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-10 rounded-2xl mb-12">
+            <h2 class="text-3xl font-bold mb-8">Vantaggi dell'IA in Finanza</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-xl font-bold mb-2">⚡ Velocità di decisione</h4>
+                    <p>Analisi e decisioni in millisecondi, impossibili per gli umani.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">📉 Riduzione dei rischi</h4>
+                    <p>Identificazione e mitigazione precoce dei rischi finanziari.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">💰 Maggiori profitti</h4>
+                    <p>Strategie ottimizzate che massimizzano i rendimenti.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">🎯 Personalizzazione</h4>
+                    <p>Soluzioni finanziarie adatte a ogni singolo cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SFIDE -->
+        <section class="bg-white p-8 rounded-2xl shadow-lg border border-purple-200">
+            <h2 class="text-3xl font-bold text-purple-900 mb-6">Sfide e Rischi</h2>
+            <ul class="space-y-4 text-slate-700">
+                <li class="flex gap-4">
+                    <span class="text-2xl">⚖️</span>
+                    <div>
+                        <strong>Regolamentazione:</strong> L'IA finanziaria è soggetta a stringenti normative per la protezione dei consumatori.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">💥</span>
+                    <div>
+                        <strong>Rischio sistemico:</strong> Algoritmi correlati potrebbero causare crash di mercato simultanei.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">🔓</span>
+                    <div>
+                        <strong>Sicurezza informatica:</strong> I sistemi finanziari sono obiettivi primari di attacchi hacker.
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-2xl">🤔</span>
+                    <div>
+                        <strong>Trasparenza:</strong> I modelli IA "scatola nera" creano problemi di responsabilità e fiducia.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="mb-2">© 2026 - AI Explorer - Loris Lorello</p>
+            <a href="index.html" class="text-purple-300 hover:text-white transition">Torna alla home</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

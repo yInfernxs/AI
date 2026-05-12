@@ -15,20 +15,20 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
         }
 
         .hero-gradient {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             animation: gradientShift 3s ease-in-out infinite;
         }
 
         @keyframes gradientShift {
             0%, 100% {
-                background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+                background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             }
             50% {
-                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%);
             }
         }
 
@@ -120,28 +120,28 @@
         .nav-btn {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
-            color: #64748b;
+            color: #6b7280;
         }
 
         .nav-btn:hover {
-            background-color: rgba(59, 130, 246, 0.08);
+            background-color: rgba(99, 102, 241, 0.1);
             transform: translateY(-2px);
-            color: #3b82f6;
+            color: #6366f1;
         }
 
         .nav-btn.active {
-            border-bottom: 3px solid #3b82f6;
-            color: #3b82f6;
-            background-color: rgba(59, 130, 246, 0.08);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+            border-bottom: 3px solid #8b5cf6;
+            color: #8b5cf6;
+            background-color: rgba(139, 92, 246, 0.08);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
         }
 
         .img-box {
             width: 100%;
             border-radius: 12px;
             overflow: hidden;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border: 1px solid #e2e8f0;
+            background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+            border: 1px solid #e9d5ff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,8 +150,8 @@
 
         .img-box:hover {
             transform: scale(1.05) rotate(0.5deg);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-            border-color: #3b82f6;
+            box-shadow: 0 12px 24px rgba(139, 92, 246, 0.2);
+            border-color: #8b5cf6;
         }
 
         .img-box img {
@@ -174,17 +174,17 @@
 
         .card-hover:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
-            border-color: #3b82f6;
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+            border-color: #8b5cf6;
         }
 
         .card-hover h4 {
             transition: color 0.3s ease;
-            color: #1e293b;
+            color: #1f2937;
         }
 
         .card-hover:hover h4 {
-            color: #3b82f6;
+            color: #8b5cf6;
         }
 
         /* Animazioni per i paragrafi con quote */
@@ -195,7 +195,7 @@
 
         p.italic:hover {
             transform: translateX(5px);
-            border-left-color: #2563eb;
+            border-left-color: #7c3aed;
         }
 
         /* Animazioni per i pulsanti e elementi interattivi */
@@ -213,7 +213,7 @@
 
         li:hover {
             transform: translateX(10px);
-            color: #3b82f6;
+            color: #8b5cf6;
         }
 
         /* Footer animazione */
@@ -224,17 +224,17 @@
 
         /* Colori migliorati */
         .bg-slate-900 {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+            background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%) !important;
             color: white;
         }
 
         .bg-red-50 {
-            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%) !important;
-            border-color: #fca5a5 !important;
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%) !important;
+            border-color: #fbbbf9 !important;
         }
 
         .text-blue-500 {
-            color: #3b82f6;
+            color: #8b5cf6;
         }
 
         h2, h3, h4, h5 {

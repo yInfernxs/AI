@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Explorer - Loris Lorello</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-btn {
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn.active {
+            border-bottom: 3px solid #3b82f6;
+            color: #3b82f6;
+            background-color: rgba(59, 130, 246, 0.05);
+        }
+
+        .img-box {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- HERO -->
+    <header class="hero-gradient text-white py-20 px-6 text-center">
+
+        <div class="max-w-4xl mx-auto">
+
+            <span
+                class="inline-block bg-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter mb-4">
+                Progetto Digitale 2026
+            </span>
+
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                INTELLIGENZA ARTIFICIALE
+            </h1>
+
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Dall'algoritmo all'etica:
+                un'esplorazione completa nel cuore della rivoluzione tecnologica.
+            </p>
+
+            <p class="mt-8 text-sm text-slate-400">
+                Autore:
+                <span class="text-white font-bold underline decoration-blue-500">
+                    Loris Lorello
+                </span>
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-md z-50 border-b">
+
+        <div class="max-w-6xl mx-auto flex justify-start md:justify-center overflow-x-auto p-1">
+
+            <button onclick="showTab('home')" id="btn-home"
+                class="nav-btn active px-6 py-4 font-bold text-sm whitespace-nowrap">
+                HOME
+            </button>
+
+            <button onclick="showTab('storia')" id="btn-storia"
+                class="nav-btn px-6 py-4 font-bold text-sm whitespace-nowrap">
+                STORIA
+            </button>
+
+            <button onclick="showTab('tecnologia')" id="btn-tecnologia"
+                class="nav-btn px-6 py-4 font-bold text-sm whitespace-nowrap">
+                TECNOLOGIA
+            </button>
+
+            <button onclick="showTab('applicazioni')" id="btn-applicazioni"
+                class="nav-btn px-6 py-4 font-bold text-sm whitespace-nowrap">
+                APPLICAZIONI
+            </button>
+
+            <button onclick="showTab('lavoro')" id="btn-lavoro"
+                class="nav-btn px-6 py-4 font-bold text-sm whitespace-nowrap">
+                LAVORO
+            </button>
+
+            <button onclick="showTab('etica')" id="btn-etica"
+                class="nav-btn px-6 py-4 font-bold text-sm whitespace-nowrap">
+                ETICA
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main class="max-w-6xl mx-auto py-12 px-6">
+
+        <!-- HOME -->
+        <section id="home" class="tab-content active">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="space-y-6">
+
+                    <h2 class="text-4xl font-extrabold text-slate-800">
+                        Il Nuovo Paradigma
+                    </h2>
+
+                    <p
+                        class="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-4">
+                        "L'IA è l'elettricità del XXI secolo:
+                        trasforma tutto ciò che tocca."
+                    </p>
+
+                    <p class="text-slate-600">
+                        Oggi l'IA gestisce la logistica globale,
+                        assiste i medici nelle diagnosi
+                        e crea contenuti personalizzati.
+                    </p>
+
+                    <p class="text-slate-600">
+                        L'Intelligenza Artificiale è una delle tecnologie
+                        più importanti del XXI secolo.
+                        Grazie alla capacità di apprendere dai dati,
+                        l'IA automatizza processi
+                        e migliora le decisioni.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+
+                        <div class="p-4 bg-white shadow-sm border rounded-xl">
+
+                            <h4 class="text-blue-600 font-black text-2xl">
+                                90%
+                            </h4>
+
+                            <p class="text-xs font-bold text-slate-500 uppercase">
+                                Aziende con IA
+                            </p>
+
+                        </div>
+
+                        <div class="p-4 bg-white shadow-sm border rounded-xl">
+
+                            <h4 class="text-emerald-600 font-black text-2xl">
+                                15.7T
+                            </h4>
+
+                            <p class="text-xs font-bold text-slate-500 uppercase">
+                                Valore Economico
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="img-box h-80 shadow-2xl">
+
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800"
+                        alt="Artificial Intelligence">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- STORIA -->
+        <section id="storia" class="tab-content">
+
+            <h2 class="text-3xl font-bold mb-10">
+                Tappe della Rivoluzione
+            </h2>
+
+            <div class="space-y-8">
+
+                <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border">
+
+                    <div class="bg-blue-600 text-white p-3 rounded-lg font-bold">
+                        1950
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-extrabold text-xl">
+                            Il Test di Turing
+                        </h4>
+
+                        <p class="text-slate-600">
+                            Alan Turing propone un metodo per verificare
+                            l'intelligenza delle macchine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border">
+
+                    <div class="bg-slate-800 text-white p-3 rounded-lg font-bold">
+                        1997
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-extrabold text-xl">
+                            Deep Blue batte Kasparov
+                        </h4>
+
+                        <p class="text-slate-600">
+                            IBM crea il primo computer capace di sconfiggere
+                            il campione mondiale di scacchi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border">
+
+                    <div class="bg-blue-500 text-white p-3 rounded-lg font-bold">
+                        2026
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-extrabold text-xl">
+                            L'Era Generativa
+                        </h4>
+
+                        <p class="text-slate-600">
+                            L'IA crea immagini, musica,
+                            codice e testi autonomamente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TECNOLOGIA -->
+        <section id="tecnologia" class="tab-content">
+
+            <div class="bg-slate-900 text-white p-10 rounded-3xl">
+
+                <h2 class="text-3xl font-bold mb-6 text-blue-400">
+                    Deep Learning & Transformer
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                    <div>
+
+                        <p class="text-slate-300 leading-relaxed mb-5">
+                            I moderni sistemi di IA utilizzano reti neurali
+                            avanzate capaci di apprendere dai dati.
+                        </p>
+
+                        <p class="text-slate-300 leading-relaxed mb-5">
+                            I Large Language Models sfruttano architetture
+                            chiamate Transformer,
+                            progettate per comprendere il contesto delle parole.
+                        </p>
+
+                        <p class="text-slate-300 leading-relaxed mb-6">
+                            L'IA moderna analizza enormi quantità di dati,
+                            riconosce schemi
+                            e genera contenuti completamente nuovi.
+                        </p>
+
+                        <ul class="space-y-4">
+
+                            <li class="flex gap-3">
+                                <span class="text-blue-500">✔</span>
+                                <span>
+                                    <strong>Reti Neurali:</strong>
+                                    sistemi ispirati al cervello umano.
+                                </span>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="text-blue-500">✔</span>
+                                <span>
+                                    <strong>Machine Learning:</strong>
+                                    apprendimento automatico.
+                                </span>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="text-blue-500">✔</span>
+                                <span>
+                                    <strong>GPU:</strong>
+                                    potenza di calcolo avanzata.
+                                </span>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="text-blue-500">✔</span>
+                                <span>
+                                    <strong>Transformer:</strong>
+                                    base dei chatbot moderni.
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="img-box h-80 bg-slate-800">
+
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200"
+                            alt="AI Technology">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- APPLICAZIONI -->
+        <section id="applicazioni" class="tab-content">
+
+            <h2 class="text-3xl font-black text-center mb-12">
+                L'IA NEL MONDO REALE
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-2xl border shadow-sm card-hover">
+
+                    <div class="img-box h-40 mb-4">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                            alt="Medicine">
+                    </div>
+
+                    <h4 class="font-bold text-xl mb-2">
+                        Medicina
+                    </h4>
+
+                    <p class="text-slate-600 text-sm">
+                        Diagnosi più rapide,
+                        analisi automatiche
+                        e scoperta di nuovi farmaci.
+                    </p>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border shadow-sm card-hover">
+
+                    <div class="img-box h-40 mb-4">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=500"
+                            alt="Environment">
+                    </div>
+
+                    <h4 class="font-bold text-xl mb-2">
+                        Ambiente
+                    </h4>
+
+                    <p class="text-slate-600 text-sm">
+                        Monitoraggio climatico,
+                        riduzione degli sprechi
+                        e gestione intelligente dell'energia.
+                    </p>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border shadow-sm card-hover">
+
+                    <div class="img-box h-40 mb-4">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=500"
+                            alt="Industry">
+                    </div>
+
+                    <h4 class="font-bold text-xl mb-2">
+                        Industria
+                    </h4>
+
+                    <p class="text-slate-600 text-sm">
+                        Robot intelligenti
+                        e automazione avanzata
+                        migliorano la produzione.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LAVORO -->
+        <section id="lavoro" class="tab-content">
+
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+
+                <div class="md:w-1/2 space-y-6">
+
+                    <h2 class="text-3xl font-bold">
+                        Evoluzione Occupazionale
+                    </h2>
+
+                    <p class="text-slate-600">
+                        L'IA trasformerà molte professioni
+                        e creerà nuove opportunità lavorative.
+                    </p>
+
+                    <div class="space-y-4">
+
+                        <div>
+
+                            <div class="flex justify-between text-sm font-bold mb-1">
+                                <span>Nuovi Lavori</span>
+                                <span>+97M</span>
+                            </div>
+
+                            <div class="w-full bg-slate-200 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-[90%]"></div>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="flex justify-between text-sm font-bold mb-1">
+                                <span>Task Automatizzati</span>
+                                <span>85M</span>
+                            </div>
+
+                            <div class="w-full bg-slate-200 h-2 rounded-full">
+                                <div class="bg-red-500 h-2 rounded-full w-[75%]"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="md:w-1/2 img-box h-72">
+
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800"
+                        alt="Future Work">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ETICA -->
+        <section id="etica" class="tab-content">
+
+            <div class="bg-red-50 border border-red-200 p-8 rounded-3xl">
+
+                <h2 class="text-3xl font-bold text-red-700 mb-6 uppercase">
+                    Responsabilità & Futuro
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <div class="space-y-4">
+
+                        <div class="bg-white p-4 rounded-xl border">
+
+                            <h5 class="font-bold">
+                                Privacy dei Dati
+                            </h5>
+
+                            <p class="text-sm text-slate-600">
+                                Proteggere i dati personali
+                                è una delle sfide principali dell'IA.
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border">
+
+                            <h5 class="font-bold">
+                                Algorithmic Bias
+                            </h5>
+
+                            <p class="text-sm text-slate-600">
+                                I sistemi IA possono ereditare
+                                pregiudizi presenti nei dati.
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border">
+
+                            <h5 class="font-bold">
+                                Sicurezza e Controllo
+                            </h5>
+
+                            <p class="text-sm text-slate-600">
+                                Gli esperti discutono
+                                su come controllare sistemi IA avanzati.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img-box min-h-[250px]">
+
+                        <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=800"
+                            alt="AI Ethics">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-500 py-12 text-center border-t border-slate-800">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <p class="text-white font-bold text-lg mb-2">
+                L'Era dell'IA
+            </p>
+
+            <p class="text-sm italic mb-4">
+                "Il futuro appartiene a chi sa dialogare con le macchine."
+            </p>
+
+            <div class="h-px bg-slate-800 w-24 mx-auto mb-4"></div>
+
+            <p class="text-xs">
+                &copy; 2026 - Progetto didattico di Loris Lorello
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+
+        function showTab(tabId) {
+
+            const sections = document.querySelectorAll('.tab-content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(tabId);
+            const activeButton = document.getElementById('btn-' + tabId);
+
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
